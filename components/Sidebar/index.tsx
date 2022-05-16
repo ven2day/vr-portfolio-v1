@@ -118,23 +118,6 @@ const Sidebar = () => {
             <br />I am software engineer that specializes at backend apis, front
             end integration, recently found myself studying UX too.
           </MotionText>
-          <MotionButton
-            size="lg"
-            variant="outline"
-            borderWidth="1px"
-            borderRadius="0"
-            fontWeight="normal"
-            fontSize="sm"
-            width="120px"
-            variants={simpleOpacity}
-            as={'a'}
-            href="mailto:hello@ventoday.com"
-            target="_blank"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Get in touch!
-          </MotionButton>
 
           <MotionBox d="flex" variants={simpleOpacity}>
             {SocialMedias.map((socMedia) => (
