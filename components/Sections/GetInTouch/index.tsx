@@ -56,12 +56,8 @@ const GetInTouch = () => {
         as my human interaction battery lasts. Coding, work, movies or even weeb
         stuff, anything is cool. So feel free to message me on any of my social
         media or shoot me an{' '}
-        <Link
-          href="mailto:hello@ventoday.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          email
+        <Link href="mailto:hello@ventoday.com" target="_blank" rel="noreferrer">
+          email me
         </Link>
         .
       </Text>
