@@ -67,22 +67,22 @@ const Sidebar = () => {
             as="h1"
             size="2xl"
             paddingRight={{ lg: '20' }}
-            textTransform="uppercase"
+            textTransform="none"
             variants={fadeInUp}
           >
-            Marc Jhon
+            Mohan Kumar
           </MotionHeading>
           <MotionHeading
             as="h2"
             size={surNameSize}
             variant="emphasis"
             className={styles.marginTopForce}
-            textTransform="uppercase"
+            textTransform="none"
             variants={letterSpace}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Lawingco.
+            Venkat.
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -90,7 +90,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me KL. That works too . . .
+            Or you could call me Ven. That works too . . .
           </MotionText>
 
           <MotionHeading
@@ -128,7 +128,7 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:marcjhon18@gmail.com"
+            href="mailto:hello@ventoday.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

@@ -1,53 +1,45 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotNet,
+  SiJava,
   SiJavascript,
-  SiTypescript,
-  SiNodeDotJs,
-  SiGraphql,
-  SiApollographql,
-  SiPhp,
+  SiNodedotjs,
+  SiExpress,
+  SiTailwindcss,
+  SiApachekafka,
   SiReact,
-  SiNextDotJs,
-  SiRedux,
-  SiStyledComponents,
-  SiGhost,
-  SiVueDotJs,
+  SiNextdotjs,
+  SiStyledcomponents,
   SiDocker,
-  SiGooglecloud,
-  SiCpanel,
+  SiMicrosoftazure,
+  SiAzuredevops,
   SiRancher,
-  SiGitlab,
-  SiPostgresql,
+  SiGithub,
+  SiOracle,
   SiMicrosoftsqlserver,
   SiMysql,
   SiMongodb,
   SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
+  SiSocketdotio,
+  SiMaterialui,
   SiFramer,
   SiGit,
   SiGnubash,
   SiVisualstudiocode,
-  SiUnity,
-  SiMicrosoft,
-  SiElectron,
+  SiSpringboot,
+  SiSpring,
+  SiApachemaven,
+  SiIntellijidea,
+  SiEclipseide,
+  SiHibernate,
 } from 'react-icons/si'
-import { BsQuestionSquare } from 'react-icons/bs'
-import { AiOutlineAntDesign } from 'react-icons/ai'
 import { FaSourcetree } from 'react-icons/fa'
-import { IoLogoPwa } from 'react-icons/io5'
 
 export type SkillCategory =
   | 'backend'
   | 'frontend'
   | 'cicd'
   | 'database'
-  | 'ui frameworks'
   | 'productivity boost'
-  | 'mobile'
-  | 'games'
-  | 'desktop'
 
 export type Skill = {
   name: string
@@ -59,64 +51,72 @@ export const Skills: {
 } = {
   backend: [
     {
-      name: 'C# - .NET.Core',
-      icon: SiDotNet,
+      name: 'Java (v8, 11)',
+      icon: SiJava,
     },
     {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: SiNodedotjs,
+    },
+    {
+      name: 'Spring Boot',
+      icon: SiSpringboot,
+    },
+    {
+      name: 'Kafka',
+      icon: SiApachekafka,
+    },
+    {
+      name: 'Hibernate (Spring JPA)',
+      icon: SiHibernate,
+    },
+    {
+      name: 'Spring MVC',
+      icon: SiSpring,
+    },
+  ],
+  frontend: [
+    {
+      name: 'React',
+      icon: SiReact,
     },
     {
       name: 'Javascript (ES6+)',
       icon: SiJavascript,
     },
     {
-      name: 'Typescript',
-      icon: SiTypescript,
-    },
-    {
-      name: 'Graphql (JS, C#)',
-      icon: SiGraphql,
-    },
-    {
-      name: 'PHP (Wordpress, Slim)',
-      icon: SiPhp,
-    },
-  ],
-  frontend: [
-    {
-      name: 'React, RecoilJS',
-      icon: SiReact,
-    },
-    {
       name: 'NextJS',
-      icon: SiNextDotJs,
+      icon: SiNextdotjs,
     },
     {
-      name: 'Apollo Graphql',
-      icon: SiApollographql,
+      name: 'Express Js',
+      icon: SiExpress,
     },
     {
-      name: 'Redux',
-      icon: SiRedux,
+      name: 'Tailwind CSS',
+      icon: SiTailwindcss,
     },
     {
-      name: 'VueJS',
-      icon: SiVueDotJs,
+      name: 'Styled Components',
+      icon: SiStyledcomponents,
     },
     {
-      name: 'Ghost',
-      icon: SiGhost,
+      name: 'MaterialUI',
+      icon: SiMaterialui,
+    },
+    {
+      name: 'Framer Motion',
+      icon: SiFramer,
     },
   ],
   database: [
     {
-      name: 'PostgreSQL',
-      icon: SiPostgresql,
-    },
-    {
       name: 'MsSQL',
       icon: SiMicrosoftsqlserver,
+    },
+    {
+      name: 'Oracle',
+      icon: SiOracle,
     },
     {
       name: 'MySQL',
@@ -132,11 +132,7 @@ export const Skills: {
     },
     {
       name: 'SocketIO',
-      icon: SiSocketDotIo,
-    },
-    {
-      name: 'Google Pubsub',
-      icon: SiGooglecloud,
+      icon: SiSocketdotio,
     },
   ],
   cicd: [
@@ -145,46 +141,24 @@ export const Skills: {
       icon: SiDocker,
     },
     {
-      name: 'GCP',
-      icon: SiGooglecloud,
+      name: 'Azure Cloud',
+      icon: SiMicrosoftazure,
     },
     {
-      name: 'CPanel',
-      icon: SiCpanel,
+      name: 'Maven',
+      icon: SiApachemaven,
     },
     {
       name: 'Rancher',
       icon: SiRancher,
     },
     {
-      name: 'GitlabCICD',
-      icon: SiGitlab,
+      name: 'Github CI/CD',
+      icon: SiGithub,
     },
     {
-      name: 'Buildkite',
-      icon: BsQuestionSquare,
-    },
-  ],
-  'ui frameworks': [
-    {
-      name: 'Styled Components',
-      icon: SiStyledComponents,
-    },
-    {
-      name: 'AntDesign',
-      icon: AiOutlineAntDesign,
-    },
-    {
-      name: 'MaterialUI',
-      icon: SiMaterialUi,
-    },
-    {
-      name: 'Framer Motion',
-      icon: SiFramer,
-    },
-    {
-      name: 'ChakraUI',
-      icon: BsQuestionSquare,
+      name: 'Azure DevOps',
+      icon: SiAzuredevops,
     },
   ],
   'productivity boost': [
@@ -204,31 +178,13 @@ export const Skills: {
       name: 'SourceTree',
       icon: FaSourcetree,
     },
-  ],
-  mobile: [
     {
-      name: 'React Native',
-      icon: SiReact,
+      name: 'IntelliJ IDEA',
+      icon: SiIntellijidea,
     },
     {
-      name: 'Web PWA',
-      icon: IoLogoPwa,
-    },
-  ],
-  games: [
-    {
-      name: 'Unity3D',
-      icon: SiUnity,
-    },
-  ],
-  desktop: [
-    {
-      name: 'Windows Forms, WPF',
-      icon: SiMicrosoft,
-    },
-    {
-      name: 'Electron',
-      icon: SiElectron,
+      name: 'Eclipse',
+      icon: SiEclipseide,
     },
   ],
 }

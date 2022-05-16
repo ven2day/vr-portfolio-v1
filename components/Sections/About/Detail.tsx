@@ -13,13 +13,13 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
+  SiJava,
   SiJavascript,
-  SiTypescript,
-  SiGraphql,
+  SiSpringboot,
+  SiMicrosoftazure,
   SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
+  SiNextdotjs,
+  SiNodedotjs,
   SiDocker,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
@@ -81,34 +81,33 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={SiJava} color={emphasis} fontSize="2em" />
+            Java (v8, v11)
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiSpringboot} color={emphasis} fontSize="2em" />
+            SpringBoot
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
             Javascript (ES6+)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
-          </ListItem>
-
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
             Node
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
+            <ListIcon as={SiMicrosoftazure} color={emphasis} fontSize="2em" />
+            Azure
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
             NextJS
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
